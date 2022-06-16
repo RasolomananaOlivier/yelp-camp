@@ -152,7 +152,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
 
-  const res = await fetch(`http://localhost:3000/api/camp/${params.url}`, {
+  const res = await fetch(`${process.env.HOST}/api/camp/${params.url}`, {
     method: 'GET',
     headers: {
       "Content-Type": 'application-json'

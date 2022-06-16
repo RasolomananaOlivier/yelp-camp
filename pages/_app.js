@@ -4,6 +4,10 @@ import App from 'next/app'
 import React, { useState } from 'react'
 import '../styles/globals.css'
 
+export function reportWebVitals(metric) {
+  console.log(metric);
+}
+
 const theme = createTheme({
   palette: {
     primary: {
